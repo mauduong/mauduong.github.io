@@ -1,0 +1,232 @@
+@font-face {
+  font-family: StardewValley;
+  font-weight: normal;
+  src: url("font/Stardew_Valley.ttf") format("truetype");
+}
+
+body {
+  /*background-color: #E8E8E8;*/
+  margin: 0;
+  height: 0;
+  background-color: #F2EEEE;
+  font-family: Helvetica;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  color: #373D3F;
+  font-size: 16px;
+  min-width: 720px;
+}
+
+.navigation-bar {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.navigation-bar ul {
+  width: 90%;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navigation-bar li {
+  display: inline;
+}
+
+.navigation-bar #title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-shadow: -1px 0 black, 4px 4px black, 1px 0 black, 0 -1px black;
+  font-family: StardewValley;
+  font-size: 3.3rem;
+  color: #CD8500;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.mode {
+  padding-top: 1.2rem;
+  margin: 0;
+  vertical-align: bottom;
+  float: right;
+}
+
+.themeSwitch {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.themeSwitch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  border-radius: 5px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CCC;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  border-radius: 30%;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #CD8500;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #CD8500;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 0 5px 10px 5px;
+  min-width: 720px;
+}
+
+.grid-container {
+  display: grid;
+  grid: auto auto auto / auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.profile-information-card {
+  display: flex;
+  flex-direction: row;
+  margin-right: 0.2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+  padding-bottom: 4px;
+  box-shadow: 2px 6px 10px 0 rgba(0,0,0,0.6);
+  border-radius: 2px;
+  background-color: #E8E8E8;
+  line-height: 1.4;
+  z-index: 0;
+  max-width: 230px;
+}
+
+.profile-information-card img {
+  pointer-events: none;
+}
+
+.villager-profile {
+  margin: 0;
+}
+
+.villager-profile figure {
+  margin: 0;
+}
+
+.villager-profile figcaption {
+  margin-top: -10px;
+  padding-left: 0.8rem;
+  line-height: 1.1;
+  display: block;
+  clear: none;
+}
+
+.villager-profile p {
+  margin: 0;
+  padding-left: 2.5rem;
+}
+
+.villager-picture {
+  margin: 0.5rem;
+  width: 80px;
+  height: 80px;
+}
+
+.birthday {
+  margin-left: 0.7rem;
+  width: 24px;
+  height: 16px;
+}
+
+.villager-gifts ul {
+  height: 15px;
+  padding: 0;
+  list-style-type: none;
+  overflow: visible;
+}
+
+.villager-gifts li {
+  display: inline;
+}
+
+.giftStatus {
+  padding-bottom: 6px;
+  width: 14px;
+  height: 14px;
+}
+
+.gift {
+  width: 28px;
+  height: 28px;
+}
+
+#disclaimer {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.giftDisclaimer {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#bottom {
+  padding-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+#bottom a, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: #373D3F;
+}
+
+#bottom a:hover {
+  text-decoration: underline;
+}
